@@ -1,0 +1,163 @@
+* {
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+}
+
+#sidebar {
+	text-align: left;
+	position: fixed;
+	top: 0;
+	border-left: solid;
+	border-right: solid;
+	border-width: 1px;
+	border-color: #FFF0E9;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 25px;
+	padding-left: 3px;
+	background: #D8632D;
+	width: 340px;
+	height: 1000px;
+}
+
+.profilebar {
+	margin-top: 2px;
+	margin-bottom: 40px;
+	color: #FFDE59;
+}
+
+.Pv-icon {
+	margin-left: 10px;
+}
+	
+.Pv-icon:hover {
+	background: #BF5728;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom:6px;
+	padding-left: 6px;
+	transition: 0.4s;	
+}
+
+.H-icon {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.H-icon:hover {
+	background: #BF5728;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom:6px;
+	padding-left: 6px;
+	transition: 0.4s;
+}
+
+.S-icon {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.S-icon:hover {
+	background: #BF5728;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom:6px;
+	padding-left: 6px;
+	transition: 0.4s;
+}
+
+.M-icon {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.M-icon:hover {
+	background: #BF5728;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom:6px;
+	padding-left: 6px;
+	transition: 0.4s;
+}
+
+.E-icon {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.E-icon:hover {
+	background: #BF5728;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom:6px;
+	padding-left: 6px;
+	transition: 0.4s;
+}
+
+.A-icon {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.A-icon:hover {
+	background: #BF5728;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom:6px;
+	padding-left: 6px;
+	transition: 0.4s;
+}
+
+.P-icon {
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 25px;
+}
+
+.P-icon:hover {
+	background: #BF5728;
+	border-radius: 25px 25px 25px 25px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom:6px;
+	padding-left: 6px;
+	transition: 0.4s;
+}
+
+audio {
+	margin-left: 12px;
+	size: 50%;
+}
+
+#main {
+	overflow-x: hidden;
+	overflow-y: auto;
+}	
+
+.Background {
+	position: absolute; 
+	z-index: -1; 
+	left: 0px;
+	right: 0px; 
+	width: 100%;
+	height: 100%;
+	filter: blur(5px);
+	top: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: fixed;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	color: red;
+}

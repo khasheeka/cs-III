@@ -145,7 +145,7 @@ audio {
 }
 
 .Background {
-	position: relative; 
+	position: absolute; 
 	z-index: -1; 
 	left: 0px;
 	right: 0px; 

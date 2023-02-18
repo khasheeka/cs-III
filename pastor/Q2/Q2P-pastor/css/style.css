@@ -38,7 +38,8 @@
 	padding-right: 3px;
 	padding-bottom:6px;
 	padding-left: 6px;
-	transition: 0.4s;	
+	transition: 0.4s;
+	transition-timing-function: ease;
 }
 
 .H-icon {

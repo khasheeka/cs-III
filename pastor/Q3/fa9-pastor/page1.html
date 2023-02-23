@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	
+		<button onclick="myFunction('You will be directed to the second.html webpage')">Click !</button>
+        <p id="demo"></p>
+		
+		<script>
+		function myFunction() {
+		let text;
+		if (confirm("Kindly press a button ! ^o^") == true) {
+			window.open("page2.html");
+		text = "You actually pressed ok ! ૮₍ •⤙•˶";
+		} else{
+		text = "You canceled ! ( T w T )";
+		}
+		document.getElementById("demo").innerHTML = text;
+        }
+		</script>
+		
+	</body>
+</html>

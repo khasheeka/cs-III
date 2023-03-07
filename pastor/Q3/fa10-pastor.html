@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	    <head>     
+				
+		<style>
+				
+			h2 {
+				text-align: center;
+			}
+			div {
+				background-color: #fc8bc4;
+				width: 300px;
+				padding: 20px;
+				border-radius: 5px;
+			}
+			
+		</style>
+		
+	    </head>
+	
+	        <body onload="name(), random()">
+		    <h2 id = "yourName" onload="name()"></h2>
+		
+		    <center>
+			    <div>
+				<button onclick="random()"> Generate Number ! </button>
+				    <p id = "randomNumber"></p>
+				    <p id = "breakdown"></p>
+			    </div>
+		    </center>
+			
+		    <script>
+		    var x;
+		    var y;
+		    var name;
+			
+			function random(){
+				x = Math.floor(Math.random() * 1001);
+				y = String(x).split('');
+				document.getElementById("randomNumber").innerHTML = "Randomly Generated Number ! : " + x;
+				document.getElementById("breakdown").innerHTML = "Breakdown: " + y.slice(-3, -2)*100 + ", " + y.slice(-2, -1)*10 + ", " + y.slice(-1);
+				
+			}
+			function name(){
+				name = prompt("Henlo ! ^o^ Please tell me your hot name before I reveal your set of genrated numbers ! ☆〜（ゝ。∂）: ")
+				document.getElementById("yourName").innerHTML = "Hemlo again, " + name.toUpperCase() + " ! Here are your randomly generated numbers huehue ^__^";
+			}
+     		</script>
+
+         	</body>
+</html>

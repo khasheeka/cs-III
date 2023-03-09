@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   	<head>
+	        
+    </head>
+	
+	<body onload="input(), determineTriangle(x, y, z)">
+	
+	<script>
+			var x;
+			var y;
+			var z;
+			
+			function input(){
+				x = prompt("Please enter your preferred integer for X !: ");
+				y = prompt("Please enter your preferred integer for Y !: ");
+				z = prompt("Please enter your preferred integer for Z !: ");
+			}
+			
+			function determineTriangle(x, y, z){
+				if (x == y && y == z){
+					alert("The triangle is logically and scientifically considered Equilateral. ✮");
+				}
+				else if ((x == y) || (y == z) || (x == y)){
+					alert("The triangle is logically and scientifically considered Isosceles. ✮");
+				}
+				else {
+					alert("The triangle is logically and scientifically considered Scalene. ✮");
+				}
+			}
+    </script>
+	
+	</body>
+	
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	    <head>
+	
+		        <meta charset="UTF-8">
+		        <meta name="description" content=" activity :: vi ; summative assessment ">
+		        <meta name="keywords" content="HTML, CSS, JavaScript">
+		        <meta name="author" content=" khasheeka pastor ❤ ">
+		
+		        <title> ˚₊‧꒰ა O.T.P ໒꒱ ‧₊˚ </title>
+		
+        <style>
+          	    body { background: #7a54a3; 
+            	text-align: center;
+            	font-family: Courier New, courier;
+                color: white;
+                }
+				
+                button { padding: 10px; background: #c34b87; color: white; border-radius: 20px }
+				h2 { color: #ffe599 }
+                a { font-size: 0.5em; color: #ffe599; text-shadow: 0 0 10px #fff2cc }
+        </style>
+
+	    </head>
+		
+    	        <h1> :: Final Verification Step ❤ </h1>
+	            <h2> Current O.T.P: <span id="OTP"> _ _ _ _ _ _ </span> <a href="" onclick = "getOTP()"> [ Generate new O.T.P ] </a></h2>
+                <button onclick = "inspect()"> *Press this and kindly enter the O.T.P as shown above* </button>
+    
+        <script>
+		
+		        // This portion of the code allows the user to be given a set of randomly generated six-digit number.
+		
+		        var OTP = Math.floor(Math.random()*899999 + 100000);
+		        document.getElementById("OTP").innerHTML = OTP;
+		
+		        function load(){
+		        document.getElementById("OTP").innerHTML = OTP;
+		        }
+				
+				// This portion of the code allows the user to input the randomly generated six-digit number given.
+		
+		        function inspect(){
+		        var K = prompt("Kindly input your correct One Time Password ! : ");
+			    if (K == OTP){
+                window.open("https://youtu.be/ZFWC4SiZBao");
+			    }
+		        else {
+			    alert("Bestie, mali jud kaayo imong password, mao sigurong gibiyaan ka > : (");
+				}
+			    generate();
+			    }
+				
+    </script>
+</body>
+</html>

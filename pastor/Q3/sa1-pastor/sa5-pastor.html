@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	    <head>
+		        <meta charset="UTF-8">
+		        <meta name="description" content=" activity :: v ; summative assessment ">
+		        <meta name="keywords" content="HTML, CSS, JavaScript">
+		        <meta name="author" content=" khasheeka pastor ❤ ">
+		
+		        <title> ˚₊‧꒰ა My Online Shop ໒꒱ ‧₊˚ </title>
+				
+				<style>
+		      	        body { background: #7a54a3; 
+            	        font-family: Courier New, courier;
+                        color: white;
+                        }
+				
+				        button { width: 120px; padding: 5px; background: #c34b87; color: white; border-radius: 10px }
+					    span { color: #ffe599; text-decoration: underline; text-shadow: 0 0 10px #fff2cc }
+						h1 { font-weight: Bold }
+						ol { margin-bottom: 30px }
+				</style>
+				
+     	</head>
+		
+        <body>
+		
+            <h1> :: Femme Fatale Shop </h1>
+            <h2> Choose any of our products ! ❤ </h2>
+		
+		    <!--- enumerate your own three products, as well as their prices --->
+            <ol>
+                <li> Ultraviolence Album by Lana Del Rey : Php 626.00 </li>
+		        <li> Vintage Pocket Knife : Php 572.00 </li>
+		        <li> 1 Pack of Marlboro Reds : Php 145.00 </li>
+            </ol>
+		
+		    <!--- this portion will be used to display the purchase information --->
+           <p> Item Selected : <span id="item"> </span> </p>
+           <p> Qty Bought : <span id="qty"> </span> </p>
+           <p> Amount To Pay For The Item: <span id="bill"> </span> </p>
+           <p> Current Total Bill ! ❤ : <span id="totalBill"> </span> </p>
+           <button onclick="askCustomer()"> Buy an Item ! ❤ </button>
+           <button onclick="clearBill()"> Clear ❤ </button>
+		   
+           <script>	
+                    var itemName= "";
+                    var price = 0;
+                    var qty = 0;
+                    var totalBill = 0;	
+			
+            <!--- this portion asks the customer their desired item and quantity --->
+            function askCustomer(){
+            	var itemNo = prompt('Kindly enter the corresponding number of your item choice !');
+            	var ItemQty = prompt('Enter Quantity');
+            
+            	if(Number.isInteger(parseInt(ItemQty))){ 
+            	qty = parseInt(ItemQty);
+            	switch (itemNo) { // the number right after the cases are enclosed in quotations as to assign said number to an item.
+            		case "1":
+            			itemName = "Ultraviolence Album by Lana Del Rey";
+						price = 626;
+            		break;
+            		case "2":
+            			itemName = "Vintage Pocket Knife";
+            			price = 572;						
+            		break;
+            		case "3":
+            			itemName = "1 Pack of Marlboro Reds";
+            			price = 145;
+            		break;
+            		default: // this part checks if the customer's input is valid.
+            			alert("This Product is not Available.");
+            		return;
+            	}		
+            
+            	var AmountToPay = qty * price; // to compute for the total amount of payment on selected item.
+            
+            	document.getElementById('item').innerHTML = itemName;
+            	document.getElementById('qty').innerHTML = qty;
+            	document.getElementById('bill').innerHTML = AmountToPay.toFixed(2);
+            
+            	totalBill += AmountToPay; // to compute for the total bill along with the different items also purchased.
+            	document.getElementById('totalBill').innerHTML = totalBill.toFixed(2);
+            	} else {
+            		alert("This QTY is Invalid");
+            	}
+            }
+            
+            function clearBill() { // to clear the customer's purchase history.
+            	totalBill = 0;
+            	document.getElementById('totalBill').innerHTML = "0";
+            }	
+            
+        </script>
+    </body>
+</html>

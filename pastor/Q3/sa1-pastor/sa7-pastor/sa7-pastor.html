@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	    <head>
+		        <meta charset="UTF-8">
+		        <meta name="description" content=" activity :: vii ; summative assessment ">
+		        <meta name="keywords" content="HTML, CSS, JavaScript">
+		        <meta name="author" content=" khasheeka pastor <3 ">
+		
+		        <title> ˚₊‧꒰ა numerology ໒꒱ ‧₊˚ </title>
+				
+        <style>
+        	    body { background-image: url("aura.jpg"); 
+            	       text-align: center;
+            	       font-family: Courier New, courier;
+                       color: white;
+                     }
+			
+                button { padding: 20px; background: white; border-radius: 50px; color: #da3986 }
+                span { font-size: 20px; color: #ffe599; }
+			    p { font-size: 150px; font-weight: Bold; color: #ffe599; text-shadow: 0 0 10px #fff2cc; margin-top: 40px; margin-bottom: 0px }
+                h3 { font-size: 30px; font-weight: Bold; color: #ffe599; margin-top: 10px; }
+				h2 { margin-top: 0px }
+        </style>
+
+	    </head>
+
+        <body>
+                <h1> ♡₊˚ Uncover the fortune that lies behind your name ・₊✧ </h1>
+				<p id="theNumber"> </p>
+				<h3 id="theSymbolism"> </h3>
+				<br>
+                <h2> You told me you are: <span id="theName"> </span> <br> What the angels say: <br> <br> <span id="theFortune"> </span></h2>
+                <br>
+                <button onclick = "nameFortune()"> Push and communicate with your angels † </button>
+				
+        <script>	
+		        function nameFortune(){
+			    var theName = prompt ("Tell me your name: ");
+				document.getElementById("theName").innerHTML = theName;
+			    var NameLength = theName.length;
+				
+				
+			
+			// This portion of the code firstly loops the "theNameLength" until the sum of all its digits becomes a single digit. 	
+							// To translate and decipher this portion in an easily comprehendable manner:
+		    /* Given - theName: khasheeka kayenne pastor; theNameLength: is 24 **including all characters (e.g spaces, etc.)**; 
+						Loop: ((24 - 4) / 10) + 4 = 2 + 4 = 6;
+			*/
+				
+			while (NameLength % 10 != NameLength){
+				NameLength = ((NameLength - (NameLength%10)) / 10) + (NameLength%10);
+			}
+			
+			// This portion of the code then outputs the manifesting fortune based on the resulted theNameLength
+			switch(NameLength){
+			
+				case 0:
+					document.getElementById("theNumber").innerHTML = "111";
+					document.getElementById("theSymbolism").innerHTML = "INTUITION";
+					document.getElementById("theFortune").innerHTML = "Your angel encourages you to keep following your spirit. You will be on the right path if you listen to your gut & your heart. ♡︎";
+					break;
+				case 1:
+ 				    document.getElementById("theNumber").innerHTML = "222";
+					document.getElementById("theSymbolism").innerHTML = "ALIGNMENT";
+					document.getElementById("theFortune").innerHTML = "You are in the right place & the right time. Trust in what you want. Don't think of things you don't want when you see this number. ♡︎";
+					break;
+				case 2:
+			    	document.getElementById("theNumber").innerHTML = "333";
+					document.getElementById("theSymbolism").innerHTML = "SUPPORT";
+					document.getElementById("theFortune").innerHTML = "Mind, body, spirit. Focus on all thee aspects. Don't neglect one for the other when you see this number. ♡︎";
+					break;
+				case 3:
+					document.getElementById("theNumber").innerHTML = "444";
+					document.getElementById("theSymbolism").innerHTML = "PROTECTION";
+					document.getElementById("theFortune").innerHTML = "The universe and your spiritual guides are protecting you. Pay attention to your thoughts & your environment when you see this number. ♡︎";
+					break;
+				case 4:
+			    	document.getElementById("theNumber").innerHTML = "555";
+					document.getElementById("theSymbolism").innerHTML = "CHANGE";
+					document.getElementById("theFortune").innerHTML = "A change is occuring. The universe is moving things around when you see this number. ♡︎";
+					break;
+				case 5:
+			    	document.getElementById("theNumber").innerHTML = "666";
+					document.getElementById("theSymbolism").innerHTML = "REFLECT";
+					document.getElementById("theFortune").innerHTML = "Take a step back to re-think it and ask yourself, is what you're doing right or wrong? It's time to wake up to a higher spiritual truth. ♡︎";
+					break;
+				case 6:
+			    	document.getElementById("theNumber").innerHTML = "777";
+					document.getElementById("theSymbolism").innerHTML = "LUCK";
+					document.getElementById("theFortune").innerHTML = "Release all fear. Be strong at Heart. Look forward to the future with excitement when you see this number. Wonderful things are about to happen. ♡︎";
+					break;
+				case 7:
+			    	document.getElementById("theNumber").innerHTML = "888";
+					document.getElementById("theSymbolism").innerHTML = "BALANCE";
+					document.getElementById("theFortune").innerHTML = "You're in harmony with the universe. Your thoughts and actions are also in harmony when you see this number. ♡︎";
+					break;
+				case 8:
+			    	document.getElementById("theNumber").innerHTML = "999";
+					document.getElementById("theSymbolism").innerHTML = "RELEASE";
+					document.getElementById("theFortune").innerHTML = "Time to start a new journey. Wrap up loose ends. Let go of what does not serve you. Prepare for the next level when you see this number. ♡︎";
+					break;
+				case 9:
+				    document.getElementById("theNumber").innerHTML = "000";
+					document.getElementById("theSymbolism").innerHTML = "REBIRTH";
+					document.getElementById("theFortune").innerHTML = "New beginnings. A fresh start. Being one with the universe. A reminder that you are the creator of your own destiny. ♡︎";
+					break;
+					
+			}
+		}
+    
+    </script>
+    
+</body>
+</html>

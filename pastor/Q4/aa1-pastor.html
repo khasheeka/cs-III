@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	    <head>	
+		        <meta charset="UTF-8">
+		        <meta name="description" content=" alternative assessment :: I ">
+		        <meta name="keywords" content="HTML, CSS, JavaScript">
+		        <meta name="author" content=" khasheeka pastor ★ ">
+				
+				<title> Genetic Coding ★ </title>
+	
+	        <style>
+			
+			    html { background: #990F02 }
+		        p { font-size: 25px }	      
+          	    body { color: white;
+				font-size: 20px }
+				
+	    	</style>
+		
+        </head>
+		
+        <body>
+		
+        <script>
+		
+            var mRNA = prompt ("Please enter the mRNA sequence ★ : ").toUpperCase();
+            var begin = mRNA.indexOf("AUG");
+			var arrayCodon = [];
+            var arrayAminoAcid = [];
+			var codon = "";
+			var acid = "";
+
+            // if 'begin' (or in this case "AUG") cannot be found in the mRNA input, it will automatically equal to -1.
+            if (begin == -1) {
+            document.write ("Starting codon cannot be found.") } 
+			    else {
+                var frameReading = mRNA.slice(begin);
+                var k = 0;
+
+            while (k < frameReading.length - 3) {
+                codon = frameReading.slice(k, k + 3);
+                arrayCodon.push(codon);
+                k += 3 }
+
+            for (var k = 0; k < arrayCodon.length; k++) {
+            
+            // this portion of the code assigns each unique codon to their respective amino acid.
+            switch (arrayCodon[k]) {
+                case "UUU":
+                case "UUC":
+                    acid = "Phe";
+                    break;
+                case "UUA":
+                case "UUG":
+                case "CUU":
+                case "CUC":
+                case "CUA":
+                case "CUG":
+                    acid = "Leu";
+                    break;
+                case "AUU":
+                case "AUC":
+                case "AUA":
+                    acid = "Ile";
+                    break;
+                case "AUG":
+                    acid = "Met";
+                    break;
+                case "GUU":
+                case "GUC":
+                case "GUA":
+                case "GUG":
+                    acid = "Val";
+                    break;
+                case "UCU":
+                case "UCC":
+                case "UCA":
+                case "UCG":
+				case "AGU":
+				case "AGC":
+                    acid = "Ser";
+                    break;
+                case "CCU":
+                case "CCC":
+                case "CCA":
+                case "CCG":
+                    acid = "Pro";
+                    break;
+                case "ACU":
+                case "ACC":
+                case "ACA":
+                case "ACG":
+                    acid = "Thr";
+                    break;
+                case "GCU":
+                case "GCC":
+                case "GCA":
+                case "GCG":
+                    acid = "Ala";
+                    break;
+                case "UAU":
+                case "UAC":
+                    acid = "Tyr";
+                    break;
+				case "CAU":
+				case "CAC":
+				    acid = "His";
+					break;
+				case "CAA":
+				case "CAG":
+				    acid = "Gln";
+					break;
+				case "AAU":
+				case "AAC":
+				    acid = "Asn";
+					break;
+				case "AAA":
+				case "AAG":
+				    acid = "Lys";
+					break;
+				case "GAU":
+				case "GAC":
+				    acid = "Asp";
+					break;	
+				case "GAA":
+				case "GAG":
+				    acid = "Glu";
+					break;					
+                case "UGU":
+                case "UGC":
+                    acid = "Cys";
+                    break;
+                case "UGG":
+                    acid = "Trp";
+                    break;
+	            case "CGU":
+                case "CGC":
+                case "CGA":
+				case "CGG":
+				case "AGA":
+				case "AGG":
+                    acid = "Arg";
+                    break;
+				case "GGU":
+				case "GGC":
+				case "GGA":
+				case "GGG":
+                    acid = "Gly";
+                    break;					
+                case "UAA":
+                case "UAG":
+                case "UGA":
+                    acid = "STOP";
+                    break;
+                default:
+                    acid = "Unknown";
+                    break;
+                }
+
+                // the push() method adds new elements (acids) to the end of the array (arrayAminoAcid).
+                arrayAminoAcid.push(acid);
+                }
+				
+				
+				// the map() method creates a new array with the results of calling a function for every array element.
+                document.write('[' + arrayCodon.map(codon => `"${codon}"`).join(',ㅤ') + ']');
+                document.write('<br>' + '<br>' + arrayAminoAcid.map((acid, index) => `${arrayCodon[index]} → ${acid}`).join('<br>'));
+            
+		        }
+			 
+        </script>
+		
+        </body>
+		
+</html>

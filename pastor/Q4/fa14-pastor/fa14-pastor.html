@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	    <head>	
+		        <meta charset="UTF-8">
+		        <meta name="description" content=" formative :: XIV ">
+		        <meta name="keywords" content="HTML, CSS, JavaScript">
+		        <meta name="author" content=" khasheeka pastor ♡ ">
+				
+				<title> Sign-Up Page ♡ </title>
+		
+		<style>
+		
+		body {
+		background-image: url('skies.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+        background-size: cover;
+		font-family: Arial;
+	    }
+		
+	    form {
+		border: 0;
+		margin: 30px auto;
+		margin-top: 50px;
+		background-color: rgba(255, 255, 255, 0.3);
+		width: 50%;
+		padding: 20px;
+		padding-top: 30px;
+		border-radius: 50px;
+	    }
+		
+		fieldset {
+		border: 0;
+		}
+		
+	    legend {
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 20px;
+	    }
+		
+		label {
+		font-weight: bold;
+		font-family: Times New Roman;
+	    }	
+	
+	    input, output {
+		border: 2px solid gray;
+		border-radius: 5px;
+	    }
+		
+		select {
+		border: 2px solid gray;
+		border-radius: 5px;
+	    }
+	
+	    textarea {
+		border: 2px solid gray;
+		border-radius: 5px;
+		font-family: Arial;
+	    }
+		
+		p {
+		font-weight: bold;
+		font-family: Times New Roman;
+		}	
+		
+		.content {
+	    padding-left: 50px;
+		}
+		
+        .heart {
+	    position: absolute;
+		margin-left: 830px;
+		margin-top: 250px;
+		}
+		
+		.ribbon {
+		position: absolute;
+		margin-left: 140px;
+		margin-top: 0;
+		transform: rotate(10deg);
+		}
+		
+		.perfume {
+        position: absolute;
+		margin-left: 110px;
+		margin-top: 650px;
+		transform: rotate(-15deg);
+		}
+		
+		.teddy {
+		position: absolute;
+		margin-left: 885px;
+		margin-top: 800px;
+		transform: rotate(15deg);
+        }		
+		
+		</style>
+		
+		</head>
+		
+		<div>
+		    <img class="heart" src="heart.png">
+			<img class="ribbon" src="ribbon.png" width="240" height="230">
+			<img class="perfume" src="perfume.png" width="210" height="340">
+			<img class="teddy" src="teddy.png" width="360" height="470">
+		</div>
+		
+	    <form onsubmit="return information()">
+		    <fieldset form="input">
+			<legend> Sign-Up Credentials </legend>
+			
+			
+			<div class="content">
+			<div>
+				<label for="givenName"> Name: </label> 
+				<br>
+				<input type="text" id="givenName" name="givenName" placeholder="Enter given name." size="30" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required> 
+				<span> ⠀ </span>
+				<input type="text" id="surname" name="surname" placeholder="Enter surname." size="30" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required>
+			</div>
+				
+			<br>	
+
+			<div>
+				<label for="gender"> Gender: </label>
+				<br>
+				<select id="gender" name="gender" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required>
+					<option value="blank"> Select... </option>
+					<option value="Male"> Male </option>
+					<option value="Female"> Female </option>
+                    <option value="Intersex"> Intersex </option>
+					<option value="Rather Not Say"> Rather Not Say </option>
+				</select>
+			
+			</div>
+
+            <br>			
+			
+			<div>
+				<label for="username"> Username: </label> 
+				<br>
+				<input type="text" id="username" name="username" placeholder="Enter desired username." size="30" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required>
+			</div>
+
+			<br>			
+			
+			<div>
+				<label for="password"> Password: </label>
+				<br>
+				<input type="password" id="password" name="password" placeholder="Enter desired password." size="30" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required>
+			</div>		
+			
+			<br>			
+			
+			<div>
+				<label for="email"> Email Address: </label>
+				<br>
+				<input type="email" id="email" name="email" placeholder="ex: myname@gmail.com" size="30" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required>
+			</div>			
+			
+			<br>		
+			
+			<div>
+				<label for="address"> Address: </label> 
+				<br>
+				<textarea type="text" id="address" name="address" placeholder="Enter home address." rows="2" cols="50" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required></textarea>
+			</div>			
+
+			<br>
+			
+			<div>
+				<label for="interests">  What are your interests? </label>
+				<br>
+				<textarea id="interests" name="interests" placeholder="Note: You may write anything in sentence/s." rows="2" cols="50" onblur="assessData(this.id, this.value)" onfocus="assessData(this.id, this.value)" required></textarea>						
+			</div>			
+			
+			<br>
+					
+			<div>
+			    <input type="submit">
+				
+				<input type="reset" onclick="resetPage()">
+			</div>
+			</div>
+
+			</fieldset>
+            </form>
+			
+			<br>
+			
+			<form onsubmit="return information()">
+		    <fieldset form="input">
+			<legend> Output: </legend>
+
+            <div class="content">
+			<div id="user">		
+			    <p> Name: <span id="givenNameK"> </span> <span id="surnameK"> </span> </p>
+			    <p> Username: <span id="usernameK"> </span> </p>
+			    <p> Gender: <span id="genderK"> </span> </p>
+			    <p> Password: <span id="passwordK"> </span> </p>
+			    <p> Email Address: <span id="emailK"> </span> </p>
+			    <p> Address: <span id="addressK"> </span> </p>
+			    <p> Interests: <span id="interestsK"> </span> </p>
+			</div>
+			</div>
+			
+			</fieldset>
+	        </form>	
+		
+	    <script>
+	
+	    function assessData(id, inputString) {
+		    if(id == "gender") {
+			    if(inputString == "blank") {
+				document.getElementById(id).style.borderColor = "red";
+			    } else {
+				    document.getElementById(id).style.borderColor = "lime";
+			    }
+				
+		
+		        } else if(inputString.trim() == "") {
+			        document.getElementById(id).style.borderColor = "red";
+		            } else {
+			        document.getElementById(id).style.borderColor = "lime";
+		        }
+	    }
+	
+	    function information() {
+		    var k = document.getElementById("gender").value;
+		    if(k == "blank") {
+			    alert("Enter an Option for your Gender; If you Prefer not to Say, Choose the Fourth Option");
+			    return false;
+		        } else {
+	
+		        var alpha = document.getElementById("givenName").value;
+		        document.getElementById("givenNameK").innerHTML = alpha;
+		
+		        var beta = document.getElementById("surname").value;
+		        document.getElementById("surnameK").innerHTML = beta;
+		
+		        var gamma = document.getElementById("gender").value;
+		        document.getElementById("genderK").innerHTML = gamma;
+		
+		        var delta = document.getElementById("username").value;
+		        document.getElementById("usernameK").innerHTML = delta;
+		
+		        var epsilon = document.getElementById("password").value;
+		        document.getElementById("passwordK").innerHTML = epsilon;
+		
+		        var zeta = document.getElementById("email").value;
+		        document.getElementById("emailK").innerHTML = zeta;
+		
+		        var eta = document.getElementById("address").value;
+		        document.getElementById("addressK").innerHTML = eta;
+		
+		        var theta = document.getElementById("interests").value;
+		        document.getElementById("interestsK").innerHTML = theta;
+		        return false;
+				
+		        }
+	    }
+		
+		function resetPage() {
+		    document.getElementById("givenNameK").innerHTML = "";
+		    document.getElementById("surnameK").innerHTML = "";
+		    document.getElementById("genderK").innerHTML = "";
+		    document.getElementById("usernameK").innerHTML = "";
+		    document.getElementById("passwordK").innerHTML = "";
+		    document.getElementById("emailK").innerHTML = "";
+	    	document.getElementById("addressK").innerHTML = "";
+			document.getElementById("interestsK").innerHTML = "";
+			document.getElementById("givenName").style.borderColor = "";
+		    document.getElementById("surname").style.borderColor = "";
+		    document.getElementById("gender").style.borderColor = "";
+		    document.getElementById("username").style.borderColor = "";
+		    document.getElementById("password").style.borderColor = "";
+		    document.getElementById("email").style.borderColor = "";
+		    document.getElementById("address").style.borderColor = "";
+		    document.getElementById("interests").style.borderColor = "";
+	    }
+	
+	</script>
+	
+	</body>
+	
+</html>

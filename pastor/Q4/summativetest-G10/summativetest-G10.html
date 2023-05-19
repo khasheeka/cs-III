@@ -16,12 +16,14 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
         background-size: cover;
+		font-family: Times New Roman;
 		}
 		
 		#menu {
+		margin-top: 0;
 		background-color: #FEC1C9;
 		width: 1290px;
-		padding-top: 30px;
+		padding-top: 40px;
 		padding-left: 40px;
 		padding-bottom: 5px;
 		border-top-left-radius: 15px;
@@ -33,21 +35,21 @@
 		
 		#side {
 		font-size: 20px;
-		margin-left: 1220px;
-		margin-top: 40px;
+		margin-left: 1200px;
+		margin-top: 30px;
 		position: absolute;
 		}
 		
 		#tab {
 		position: absolute;
 		background-color: white;
-		padding-top: 10px;
+		padding-top: 15px;
 		padding-left: 15px;
 		padding-right: 10px;
-		padding-bottom: 7px;
+		padding-bottom: 10px;
 		border-top-left-radius: 15px;
 		border-top-right-radius: 15px;
-		margin-top: 35px;
+		margin-top: 25px;
 		margin-left: 100px;
 		font-size: 16px;
 		}
@@ -60,7 +62,7 @@
 		padding-bottom: 9px;
 		position: absolute;
 		font-size: 20px;
-		margin-top: 71px;
+		margin-top: 67px;
 		}
 		
 		#search {
@@ -70,8 +72,8 @@
 		padding-top: 5px;
 		padding-bottom: 5px;
 		padding-left: 15px;
-		padding-right: 800px;
-		margin-top: 78px;
+		padding-right: 520px;
+		margin-top: 75px;
 		margin-left: 130px;
 		border: 1px solid;
 		border-color: #a36270;
@@ -82,23 +84,135 @@
 		#favourite {
 		font-size: 20px;
 		position: absolute;
-		margin-top: 78px;
+		margin-top: 76px;
 		margin-left: 1090px;
 		}
 		
+		#other {
+		font-size: 20px;
+		position: absolute;
+		margin-top: 76px;
+		margin-left: 1240px;
+		}
+		
+		
+		h1 {
+		background-color: white;
+        position: absolute;
+		width: 1335px; 
+		padding-top: 25px;
+		padding-bottom: 25px;
+		margin-top: 113px;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		border: 2px solid;
+		border-color: #d3d3d3;
+        }	
 		
 		.content {
-		margin-top: 110px;
+		margin-top: 390px;
+		position: absolute;
+		}	
+		
+        .one {
+		background-color: rgba(254, 193, 201, 0.7);
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 15px;
+		}
+		
+		#one {
+		background-color: rgba(214, 135, 152, 0.7);
+		border: 1px solid;
+		border-color: rgb(214, 135, 152);
+		border-radius: 15px;
+		margin-top: 275px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: absolute;
+		margin-left: 475px;
+        }		
+  
+        .two {
+		background-color: rgba(254, 193, 201, 0.7);
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-radius: 15px;
+		}
+		
+		#two {
+		background-color: rgba(214, 135, 152, 0.7);
+		border: 1px solid;
+		border-color: rgb(214, 135, 152);
+		border-radius: 15px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 0px;
+		margin-top: 80px;
+		margin-bottom: 40px;
+		}
+		
+		#NCETest {
+		margin-left: 190px;
+		margin-right: 190px;
+		}
+		
+		#submit {
+		background-color: #FEC1C9;
+		border-radius: 20px;
+		border-color: #D68798;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 17px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+        position: absolute;	
+		}
+		
+		#reset {
+		background-color: #FEC1C9;
+		border-radius: 20px;
+		border-color: #D68798;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 17px;
+		margin-top: 30px;
+		margin-left: 110px;
+		margin-bottom: 30px;
 		position: absolute;
 		}
 		
-  
         .feedback {
         margin-bottom: 10px;
-        }
+        }		
 		
-		
-		
+		#score {
+		background-color: #FEC1C9;
+		border: 2px solid;
+		border-radius: 20px;
+		border-color: #D68798;
+		padding-top: 10px;
+		padding-bottom: 8px;
+		padding-left: 20px;
+		padding-right: 30px;
+		font-size: 17px;
+        width: 150px;
+        position: absolute;		
+		margin-top: 32px;
+		margin-left: 950px;
+		margin-bottom: 30px;
+		}
        
 	    </style>
 	   
@@ -109,18 +223,21 @@
 		<p id="menu"> Menu </p>
 		<strong id="side">ㅤ—ㅤ❐ㅤ✕ </strong>
 		<p id="tab"> NCE Reviewer ♡ ㅤㅤㅤㅤㅤ<strong> ✕ </strong></p>
+	    <center> <h1> .˚₊‧꒰ა NCE Reviewer ໒꒱ ‧₊˚. </h1> </center>
 		<strong id="bar"> <ㅤ>ㅤ↺ </strong>
-		<strong id="search"> 🔓︎ ㅤ︎www.coquettencereviewer ♡ </strong>
+		<strong id="search"> 🔓︎ ㅤ︎www.legitncereviewermakapasakasapisaypromiseihatagnaanggunosir ♡ </strong>
 		<strong id="favourite"> ⇨ㅤ☆ </strong>
-  
-        <div class="content">
-		
-        <h1> NCE Reviewer </h1>
+		<strong id="other"> ♥ㅤ⧠ㅤ☰ </strong>
 
-        <h2>Multiple Choice Questions</h2>
+        <center> <h2 id="one"> I.ㅤMultiple Choice Questions : </h2> </center>
+		
+		<div class="content">
 	   
         <form id="NCETest" onsubmit="return submitQuiz()">
-        <ol>
+		
+		<div class="one">
+		
+		<ol>
 		
         <li>
         <div class="questions"> <p> If the price of round-trip fare to Cincinnati, Ohio is $285, how much will it cost a family of four if the father pays the full fare, the mother pays ⅔ of the full fare, and the two children each pay ½ of the full fare ? </p>
@@ -136,8 +253,7 @@
           <input type="radio" name="q1" value="d">
           <label for="d"> 1140 </label> <br>
           <p id="f1"></p>
-        </div>
-		
+        </div>	
         </li>
 		
         <li>
@@ -221,7 +337,7 @@
           <label for="b"> $44.40 </label>
 		  <br>
           <input type="radio" name="q6" value="c">
-          <label for="c"> $409.08 </label>\
+          <label for="c"> $409.08 </label>
 		  <br>
           <input type="radio" name="q6" value="d">
           <label for="d"> $444.44 </label>
@@ -391,9 +507,14 @@
           <p id="f15"></p>
         </div>
         </li>
+		
         </ol>
-
-        <h2>Fill in the Blanks</h2>
+		
+		</div>
+		
+		<h2 id="two"> II.ㅤFill in the blanks : </h2>
+		
+		<div class="two">
 	   
         <ol>
 	   
@@ -435,13 +556,15 @@
         </li>
 		
         </ol>
+		
+		</div>
 	
-        <input type="Submit">
-        <button onclick="resetQuiz()"> Reset </button>
+        <input type="Submit" id="submit">
+        <button onclick="resetQuiz()" id="reset"> Reset </button>
  
         </form>
 		
-        <p id="score"></p>
+        <p id="score"> Total Score: </p>
 		
 		</div>
 
@@ -584,7 +707,7 @@
                     document.getElementById("f15").style.color = "red";
                 }
 
-                if (NCETest.q16ans.value == "54" || NCETest.q16ans2.value == "69" ) {
+                if (NCETest.q16ans.value == "54" && NCETest.q16ans2.value == "69" ) {
                 score++;
                 f16.innerHTML = "Your answer is correct.";
                 document.getElementById("f16").style.color = "green";
@@ -593,7 +716,7 @@
                     document.getElementById("f16").style.color = "red";
                 }
 
-                if (NCETest.q17ans.value == "30" || NCETest.q17ans2.value == "74" ) {
+                if (NCETest.q17ans.value == "30" && NCETest.q17ans2.value == "74" ) {
                 score++;
                 f17.innerHTML = "Your answer is correct.";
                 document.getElementById("f17").style.color = "green";
@@ -629,7 +752,7 @@
                     document.getElementById("f20").style.color = "red";
                 }
                 
-				document.getElementById("score").innerHTML = "Total Score: " + score + "/20";
+				document.getElementById("score").innerHTML = " Total Score " + score + "/20";
                 return false;
             }
 

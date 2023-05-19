@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+	    <head>	
+		        <meta charset="UTF-8">
+		        <meta name="description" content=" summative test :: IV quarter ">
+		        <meta name="keywords" content="HTML, CSS, JavaScript">
+		        <meta name="author" content=" maegan elevazo, khasheeka pastor, danielle osorio ♡ ">
+				<link rel="icon" href="icon.png">
+				
+				<title> NCE Reviewer ♡ </title>
+				
+        <style>
+		
+		body {
+		background-image: url('bg.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+        background-size: cover;
+		}
+		
+		#menu {
+		background-color: #FEC1C9;
+		width: 1290px;
+		padding-top: 30px;
+		padding-left: 40px;
+		padding-bottom: 5px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border: 2px solid;
+		border-color: #D68798;
+		position: absolute;
+		}
+		
+		#side {
+		font-size: 20px;
+		margin-left: 1220px;
+		margin-top: 40px;
+		position: absolute;
+		}
+		
+		#tab {
+		position: absolute;
+		background-color: white;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 10px;
+		padding-bottom: 7px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		margin-top: 35px;
+		margin-left: 100px;
+		font-size: 16px;
+		}
+		
+		#bar {
+		background-color: white;
+		width: 1315px;
+		padding-top: 9px;
+		padding-left: 20px;
+		padding-bottom: 9px;
+		position: absolute;
+		font-size: 20px;
+		margin-top: 71px;
+		}
+		
+		#search {
+		background-color: #D68798;
+		border-radius: 15px;
+		position: absolute;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 15px;
+		padding-right: 800px;
+		margin-top: 78px;
+		margin-left: 130px;
+		border: 1px solid;
+		border-color: #a36270;
+		font-size: 15px;
+		}
+		
+		
+		#favourite {
+		font-size: 20px;
+		position: absolute;
+		margin-top: 78px;
+		margin-left: 1090px;
+		}
+		
+		
+		.content {
+		margin-top: 110px;
+		position: absolute;
+		}
+		
+  
+        .feedback {
+        margin-bottom: 10px;
+        }
+		
+		
+		
+       
+	    </style>
+	   
+        </head>
+
+        <body>
+		
+		<p id="menu"> Menu </p>
+		<strong id="side">ㅤ—ㅤ❐ㅤ✕ </strong>
+		<p id="tab"> NCE Reviewer ♡ ㅤㅤㅤㅤㅤ<strong> ✕ </strong></p>
+		<strong id="bar"> <ㅤ>ㅤ↺ </strong>
+		<strong id="search"> 🔓︎ ㅤ︎www.coquettencereviewer ♡ </strong>
+		<strong id="favourite"> ⇨ㅤ☆ </strong>
+  
+        <div class="content">
+		
+        <h1> NCE Reviewer </h1>
+
+        <h2>Multiple Choice Questions</h2>
+	   
+        <form id="NCETest" onsubmit="return submitQuiz()">
+        <ol>
+		
+        <li>
+        <div class="questions"> <p> If the price of round-trip fare to Cincinnati, Ohio is $285, how much will it cost a family of four if the father pays the full fare, the mother pays ⅔ of the full fare, and the two children each pay ½ of the full fare ? </p>
+          <input type="radio" name="q1" value="a" required>
+          <label for="a"> 475 </label>
+		  <br>
+          <input type="radio" name="q1" value="b">
+          <label for="b"> 570 </label>
+		  <br>
+          <input type="radio" name="q1" value="c">
+          <label for="c"> 760 </label>
+		  <br>
+          <input type="radio" name="q1" value="d">
+          <label for="d"> 1140 </label> <br>
+          <p id="f1"></p>
+        </div>
+		
+        </li>
+		
+        <li>
+        <div class="questions"> <p> What number should be subtracted to both 71 and 58 that would result in two perfect squares ? </p>
+          <input type="radio" name="q2" required value="a">
+          <label for="a"> 22 </label>
+		  <br>
+          <input type="radio" name="q2"value="b">
+          <label for="b"> 33 </label>
+		  <br>
+          <input type="radio" name="q2" value="c">
+          <label for="c"> 35 </label>
+		  <br>
+          <input type="radio" name="q2" value="d">
+          <label for="d"> 42 </label>
+		  <br>
+          <p id="f2"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> Suki owns 6 red shirts and 9 black shirts. If she picks one shirt at random, what is the probability that it will not be black ? </p>
+          <input type="radio" name="q3" required value="a">
+          <label for="a"> 2/5 </label>
+		  <br>
+          <input type="radio" name="q3" value="b">
+          <label for="b"> 4/5 </label>
+		  <br>
+          <input type="radio" name="q3" value="c">
+          <label for="c"> 2/3 </label>
+		  <br>
+          <input type="radio" name="q3" value="d">
+          <label for="d"> 1/3 </label>
+		  <br>
+          <p id="f3"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> What percent of four is ⅗ of 8 ? </p>
+          <input type="radio" name="q4" required value="a">
+          <label for="a"> 48% </label>
+		  <br>
+          <input type="radio" name="q4" value="b">
+          <label for="b"> 80% </label>
+		  <br>
+          <input type="radio" name="q4" value="c">
+          <label for="c"> 83% </label>
+		  <br>
+          <input type="radio" name="q4" value="d">
+          <label for="d"> 120% </label>
+		  <br>
+          <p id="f4"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p>Lana ran 5 ½ miles on Friday, on Saturday 6 ¼ miles, on Sunday 4 ½ miles, and on Monday 2 ¾ miles. What is the average number of miles Lana ran ? </p>
+          <input type="radio" name="q5" required value="a">
+          <label for="a"> 5 miles </label>
+		  <br>
+          <input type="radio" name="q5" value="b">
+          <label for="b"> 3 3/4 miles </label>
+		  <br>
+          <input type="radio" name="q5" value="c">
+          <label for="c"> 4 miles </label>
+		  <br>
+          <input type="radio" name="q5" value="d">
+          <label for="d"> 4 3/4 miles </label>
+		  <br>
+          <p id="f5"></p>
+        </div>
+        </li>
+      
+	    <li>
+        <div class="questions"> <p> A car averages 27 miles per gallon. If gas costs $4.04 per gallon, which of the following is closest to how much the gas would cost for this car to travel 2,727 miles ? </p>
+          <input type="radio" name="q6" required value="a">
+          <label for="a"> $408.04 </label>
+		  <br>
+          <input type="radio" name="q6"value="b">
+          <label for="b"> $44.40 </label>
+		  <br>
+          <input type="radio" name="q6" value="c">
+          <label for="c"> $409.08 </label>\
+		  <br>
+          <input type="radio" name="q6" value="d">
+          <label for="d"> $444.44 </label>
+		  <br>
+          <p id="f6"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> The ratio in a triangle adjacent to the hypotenuse is called the ? </p>
+          <input type="radio" name="q7" required value="a">
+          <label for="a"> Cosine </label>
+		  <br>
+          <input type="radio" name="q7" value="b">
+          <label for="b"> Tangent </label>
+		  <br>
+          <input type="radio" name="q7" value="c">
+          <label for="c"> Sine </label>
+		  <br>
+          <input type="radio" name="q7" value="d">
+          <label for="d"> Inverse Cosine </label>
+		  <br>
+          <p id="f7"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> What does the letter D represent in the Roman numeral system ? </p>
+          <input type="radio" name="q8" required value="a">
+          <label for="a"> 1000 </label>
+		  <br>
+          <input type="radio" name="q8" value="b">
+          <label for="b"> 50 </label>
+		  <br>
+          <input type="radio" name="q8" value="c">
+          <label for="c"> 500 </label>
+		  <br>
+          <input type="radio" name="q8" value="d">
+          <label for="d"> 100 </label>
+		  <br>
+          <p id="f8"></p>
+        </div>
+        </li>
+	  
+        <li>
+        <div class="questions"> <p> Three times the first of three consecutive odd integers is 3 more than twice the third. Find the third integer. </p>
+          <input type="radio" name="q9" required value="a">
+          <label for="a"> 9 </label>
+		  <br>
+          <input type="radio" name="q9" value="b">
+          <label for="b"> 13 </label>
+		  <br>
+          <input type="radio" name="q9" value="c">
+          <label for="c"> 11 </label>
+		  <br>
+          <input type="radio" name="q9" value="d">
+          <label for="d"> 15 </label>
+		  <br>
+          <p id="f9"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> A meter stick was cut into two pieces at the 64-cm mark. What the ratio of the smaller piece to the largest piece ? </p>
+          <input type="radio" name="q10" required value="a">
+          <label for="a"> 9:16 </label>
+		  <br>
+          <input type="radio" name="q10" value="b">
+          <label for="b"> 16:25 </label>
+		  <br>
+          <input type="radio" name="q10" value="c">
+          <label for="c"> 13:50 </label>
+		  <br>
+          <input type="radio" name="q10" value="d">
+          <label for="d"> 9:25 </label>
+		  <br>
+          <p id="f10"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> The product of 2 whole numbers is 36, and their ratio is 1:4. Which of these is the smaller number ? </p>
+          <input type="radio" name="q11" required value="a">
+          <label for="a"> 9 </label>
+		  <br>
+          <input type="radio" name="q11" value="b">
+          <label for="b"> 3 </label>
+		  <br>
+          <input type="radio" name="q11" value="c">
+          <label for="c"> 2 </label>
+		  <br>
+          <input type="radio" name="q11" value="d">
+          <label for="d"> 12 </label>
+		  <br>
+          <p id="f11"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions" <p>Find, in feet, the amount of framing needed to frame a picture 8 ½ inches by 11 inches ? </p>
+          <input type="radio" name="q12" required value="a">
+          <label for="a"> 3 1/4 ft </label>
+		  <br>
+          <input type="radio" name="q12" value="b">
+          <label for="b"> 2 1/4 ft </label>
+		  <br>
+          <input type="radio" name="q12" value="c">
+          <label for="c"> 4 1/4 ft </label>
+		  <br>
+          <input type="radio" name="q12" value="d">
+          <label for="d"> 5 1/4 ft </label>
+		  <br>
+          <p id="f12"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> If a certain job can be finished by 18 workers in 26 days, how many workers are needed to finish the job in 12 days ? </p>
+          <input type="radio" name="q13" required value="a">
+          <label for="a"> 24 </label>
+		  <br>
+          <input type="radio" name="q13" value="b">
+          <label for="b"> 30 </label>
+		  <br>
+          <input type="radio" name="q13" value="c">
+          <label for="c"> 39 </label>
+		  <br>
+          <input type="radio" name="q13" value="d">
+          <label for="d"> 45 </label>
+		  <br>
+          <p id="f13"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> Which of these weighs the heaviest ? </p>
+          <input type="radio" name="q14" required value="a">
+          <label for="a"> 2250 g </label>
+		  <br>
+          <input type="radio" name="q14" value="b">
+          <label for="b"> 2.5 kg </label
+		  ><br>
+          <input type="radio" name="q14" value="c">
+          <label for="c"> 4200 mg </label>
+		  <br>
+          <input type="radio" name="q14" value="d">
+          <label for="d"> 5 pounds </label>
+		  <br>
+          <p id="f14"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="questions"> <p> What is the median of the following numbers 8, 5, 7, 5, 9, 9, 1, 8, and 10 ? </p>
+          <input type="radio" name="q15" required value="a">
+          <label for="a"> 5 </label>
+		  <br>
+          <input type="radio" name="q15" value="b">
+          <label for="b"> 7 </label>
+		  <br>
+          <input type="radio" name="q15" value="c">
+          <label for="c"> 8 </label>
+		  <br>
+          <input type="radio" name="q15" value="d">
+          <label for="d"> 9 </label>
+		  <br>
+          <p id="f15"></p>
+        </div>
+        </li>
+        </ol>
+
+        <h2>Fill in the Blanks</h2>
+	   
+        <ol>
+	   
+        <li>
+        <div class="question"> <p> Find the next 2 terms of the sequence: 37, 78, 45, 70, 53, 62, 61... </p>
+		<br> 
+		<input type="number" name="q16ans"required> 
+		<input type="number" name="q16ans2" required>
+        <p id="f16"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="question"> <p> Find the next 2 terms of the sequence: 48, 48, 53, 43, 59, 37, 66... </p> 
+		<br>
+		<input type="number" name="q17ans"required>
+		<input type="number" name="q17ans2" required>
+        <p id="f17"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="question"> <p> Nina walks a distance of 6 meters towards south. She then turns to the left and walks 6 meters. After this she turns to the right and walks 6 meters. In which direction is she facing now ? </p> 
+		<input type="text" required name="q18ans" oninput="this.value=this.value.toLowerCase()">
+        <p id="f18"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="question">  <p> <input type="text" required name="q19ans" oninput="this.value=this.value.toLowerCase()"> is a comparison of two numbers by division; also a fraction. </p>
+        <p id="f19"></p>
+        </div>
+        </li>
+		
+        <li>
+        <div class="question"> <p> <input type="text" required name="q20ans" oninput="this.value=this.value.toLowerCase()"> is the numerical coefficient or constant quantity placed before the variable. </p>
+        <p id="f20"></p>
+        </div>
+        </li>
+		
+        </ol>
+	
+        <input type="Submit">
+        <button onclick="resetQuiz()"> Reset </button>
+ 
+        </form>
+		
+        <p id="score"></p>
+		
+		</div>
+
+        <script>
+  
+            function submitQuiz() {
+            score = 0;
+                if (NCETest.q1.value == "c") {
+                score++;
+                f1.innerHTML= "Your answer is correct.";
+                document.getElementById("f1").style.color = "green";
+                } else {
+                    f1.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f1").style.color = "red";
+                }
+      
+                if (NCETest.q2.value == "a") {
+                score++;
+                f2.innerHTML = "Your answer is correct.";
+                document.getElementById("f2").style.color = "green";
+                } else {
+                    f2.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f2").style.color = "red";
+                }
+      
+                if (NCETest.q3.value == "a") {
+                score++;
+                f3.innerHTML = "Your answer is correct.";
+                document.getElementById("f3").style.color = "green";
+                } else {
+                    f3.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f3").style.color = "red";
+                }
+      
+                if (NCETest.q4.value == "d") {
+                score++;
+                f4.innerHTML = "Your answer is correct.";
+                document.getElementById("f4").style.color = "green";
+                } else {
+                    f4.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f4").style.color = "red";
+                }
+      
+                if (NCETest.q5.value == "d") {
+                score++;
+                f5.innerHTML = "Your answer is correct.";
+                document.getElementById("f5").style.color = "green";
+                } else {
+                    f5.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f5").style.color = "red";
+                }
+
+                if (NCETest.q6.value == "a") {
+                score++;
+                f6.innerHTML = "Your answer is correct.";
+                document.getElementById("f6").style.color = "green";
+                } else {
+                    f6.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f6").style.color = "red";
+                }
+
+                if (NCETest.q7.value == "a") {
+                score++;
+                f7.innerHTML = "Your answer is correct.";
+                document.getElementById("f7").style.color = "green";
+                } else {
+                    f7.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f7").style.color = "red";
+                }
+
+                if (NCETest.q8.value == "c") {
+                score++;
+                f8.innerHTML = "Your answer is correct.";
+                document.getElementById("f8").style.color = "green";
+                } else {
+                    f8.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f8").style.color = "red";
+                }
+
+                if (NCETest.q9.value == "d") {
+                score++;
+                f9.innerHTML = "Your answer is correct.";
+                document.getElementById("f9").style.color= "green";
+                } else {
+                    f9.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f9").style.color = "red";
+                }
+
+                if (NCETest.q10.value == "a") {
+                score++;
+                f10.innerHTML = "Your answer is correct.";
+                document.getElementById("f10").style.color = "green";
+                } else {
+                    f10.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f10").style.color = "red";
+                }
+
+                if (NCETest.q11.value == "b") {
+                score++;
+                f11.innerHTML = "Your answer is correct.";
+                document.getElementById("f11").style.color = "green";
+                } else {
+                    f11.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f11").style.color = "red";
+                }
+
+                if (NCETest.q12.value == "a") {
+                score++;
+                f12.innerHTML = "Your answer is correct.";
+                document.getElementById("f12").style.color = "green";
+                } else {
+                    f12.innerHTML = "Your answer is incorrect.";
+                document.getElementById("f12").style.color = "red";
+                }
+
+                if (NCETest.q13.value == "c") {
+                score++;
+                f13.innerHTML = "Your answer is correct.";
+                document.getElementById("f13").style.color = "green";
+                } else {
+                    f13.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f13").style.color = "red";
+                }
+
+                if (NCETest.q14.value == "b") {
+                score++;
+                f14.innerHTML = "Your answer is correct.";
+                document.getElementById("f14").style.color = "green";
+                } else {
+                    f14.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f14").style.color = "red";
+                }
+
+                if (NCETest.q15.value == "d") {
+                score++;
+                f15.innerHTML = "Your answer is correct.";
+                document.getElementById("f15").style.color = "green";
+                } else {
+                    f15.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f15").style.color = "red";
+                }
+
+                if (NCETest.q16ans.value == "54" || NCETest.q16ans2.value == "69" ) {
+                score++;
+                f16.innerHTML = "Your answer is correct.";
+                document.getElementById("f16").style.color = "green";
+                } else {
+                    f16.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f16").style.color = "red";
+                }
+
+                if (NCETest.q17ans.value == "30" || NCETest.q17ans2.value == "74" ) {
+                score++;
+                f17.innerHTML = "Your answer is correct.";
+                document.getElementById("f17").style.color = "green";
+                } else {
+                    f17.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f17").style.color = "red";
+                }
+      
+                if (NCETest.q18ans.value == "south") {
+                score++;
+                f18.innerHTML = "Your answer is correct.";
+                document.getElementById("f18").style.color = "green";
+                } else {
+                    f18.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f18").style.color = "red";
+                }
+
+                if (NCETest.q19ans.value == "ratio") {
+                score++;
+                f19.innerHTML = "Your answer is correct.";
+                document.getElementById("f19").style.color = "green";
+                } else {
+                    f19.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f19").style.color = "red";
+                }
+
+                if (NCETest.q20ans.value == "coefficient") {
+                score++;
+                f20.innerHTML = "Your answer is correct.";
+                document.getElementById("f20").style.color = "green";
+                } else {
+                    f20.innerHTML = "Your answer is incorrect.";
+                    document.getElementById("f20").style.color = "red";
+                }
+                
+				document.getElementById("score").innerHTML = "Total Score: " + score + "/20";
+                return false;
+            }
+
+            function resetQuiz() { window.location.reload(); }
+			
+        </script>
+		
+        </body>
+		
+</html>
